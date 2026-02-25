@@ -36,8 +36,8 @@ public class PiDigits {
                         - 2 * sum(4, start)
                         - sum(5, start)
                         - sum(6, start);
-
                 start += DigitsPerSum;
+
             }
 
             sum = 16 * (sum - Math.floor(sum));
