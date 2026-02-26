@@ -11,6 +11,8 @@ public class PiDigits {
     private static int DigitsPerSum = 8;
     private static double Epsilon = 1e-17;
 
+    private int n = 0;
+
     
     /**
      * Returns a range of hexadecimal digits of pi.
@@ -19,6 +21,8 @@ public class PiDigits {
      * @return An array containing the hexadecimal digits.
      */
     public static byte[] getDigits(int start, int count) {
+
+
         if (start < 0) {
             throw new RuntimeException("Invalid Interval");
         }
@@ -108,6 +112,10 @@ public class PiDigits {
         }
 
         return result;
+    }
+
+    public int getN(){
+        return n;
     }
 
 }

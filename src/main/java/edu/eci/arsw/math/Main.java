@@ -17,9 +17,13 @@ public class Main {
         //System.out.println(bytesToHex(PiDigits.getDigits(0, 10)));
         //System.out.println(bytesToHex(PiDigits.getDigits(1, 10)));
 
-        //System.out.println(bytesToHex(PiDigits.getDigits(1, 1000000)));
-        CicloDeVida cicloDeVida = new CicloDeVida(1,10, 3 );
+//        System.out.println(bytesToHex(PiDigits.getDigits(3, 10)));
+//        System.out.println(bytesToHex(PiDigits.getDigits(6, 10)));
+//        System.out.println(bytesToHex(PiDigits.getDigits(9, 10)));
+        CicloDeVida cicloDeVida = new CicloDeVida(3,10, 3 );
         cicloDeVida.start();
+
+
     }
 
     private final static char[] hexArray = "0123456789ABCDEF".toCharArray();

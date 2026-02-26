@@ -18,11 +18,12 @@ public class CicloDeVida extends Thread {
 
     public void calcularPiDigits(){
         int porciones = start / parte;
-
+        int startPrueba = porciones;
         for(int i = 0; i < parte; i++){
-            PiDigits.getDigits(porciones, count);
-            porciones++;
-            System.out.println(bytesToHex(PiDigits.getDigits(porciones, count)));
+            System.out.println(porciones);
+            PiDigits.getDigits(startPrueba, count);
+            porciones = porciones + startPrueba ;
+            System.out.println(bytesToHex(PiDigits.getDigits(porciones, count)) + " hilo");
         }
 
     }
